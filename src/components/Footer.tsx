@@ -28,7 +28,7 @@ export default function Footer() {
               <Linkedin size={24} />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Useradel07"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-slate-800/50 backdrop-blur-sm rounded-lg text-violet-400 hover:text-violet-300 hover:bg-slate-700/50 hover:scale-110 hover:shadow-lg hover:shadow-violet-500/30 transition-all duration-300"
@@ -37,7 +37,7 @@ export default function Footer() {
               <Github size={24} />
             </a>
             <a
-              href="mailto:adel@example.com"
+              href="mailto:adel.rjili@isimg.tn"
               className="p-3 bg-slate-800/50 backdrop-blur-sm rounded-lg text-violet-400 hover:text-violet-300 hover:bg-slate-700/50 hover:scale-110 hover:shadow-lg hover:shadow-violet-500/30 transition-all duration-300"
               aria-label="Email"
             >
