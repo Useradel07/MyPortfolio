@@ -33,13 +33,16 @@ export default function Hero() {
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
-          <div className="mb-8 inline-block">
-            <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-violet-500 via-blue-500 to-purple-600 p-1 shadow-2xl shadow-violet-500/50 animate-pulse-slow">
-              <div className="w-full h-full rounded-full bg-slate-900 dark:bg-slate-900 flex items-center justify-center text-6xl font-bold bg-gradient-to-br from-violet-400 to-blue-400 bg-clip-text text-transparent">
-                AR
-              </div>
-            </div>
-          </div>
+<div className="mb-8 inline-block">
+  <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-violet-500 via-blue-500 to-purple-600 p-1 shadow-2xl shadow-violet-500/50 animate-pulse-slow">
+    <img
+      src="https://media.licdn.com/dms/image/v2/D4D03AQGtAuCtwmDFxw/profile-displayphoto-shrink_200_200/B4DZda2XxpGkAk-/0/1749575893160?e=1765411200&v=beta&t=LREL87VRSURt7kNobtkaqeUsY_yCXC15dzwvusIm-fE"
+      alt="Profile"
+      className="w-full h-full rounded-full object-cover fade-in"
+    />
+  </div>
+</div>
+
 
           <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-violet-400 via-blue-400 to-purple-500 bg-clip-text text-transparent animate-gradient">
             Adel Rjili
