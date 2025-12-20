@@ -5,10 +5,11 @@ import { ExternalLink, Github, Layers, ShoppingBag, Map } from 'lucide-react';
 const projects = [
   {
     title: 'ToneMaster AI',
-    description: 'A professional text rewriting tool powered by Groq and the Llama 3 model.
-    It helps users instantly rewrite emails, essays, and messages into specific tones
-    (Corporate, Empathetic, Legal, Gen-Z, etc.) and formats (Email, LinkedIn, Slack, etc.)
-    with an ultra-fast streaming experience.',
+    description: `A professional text rewriting tool powered by Groq and the Llama 3 model.
+It helps users instantly rewrite emails, essays, and messages into specific tones
+(Corporate, Empathetic, Legal, Gen-Z, etc.) and formats (Email, LinkedIn, Slack, etc.)
+with an ultra-fast streaming experience.`,
+
     
     tags: ['React', 'groq-sdk', 'Tailwind CSS', 'Vercel Serverless Functions (Node.js)','Framer Motion','Lucide React (Icons)'],
     icon: Layers,
