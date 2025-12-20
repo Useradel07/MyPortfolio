@@ -5,9 +5,11 @@ import { ExternalLink, Github, Layers, ShoppingBag, Map } from 'lucide-react';
 const projects = [
   {
     title: 'ToneMaster AI',
-    description: 'a professional text rewriting tool powered by **Groq** and the **Llama 3** model. It helps users instantly rewrite emails, essays, and messages into specific tones (Corporate, Empathetic, Legal, Gen-Z, etc.) and formats (Email, LinkedIn, Slack, etc.).
- ultra-fast streaming experience.
-',
+    description: 'A professional text rewriting tool powered by Groq and the Llama 3 model.
+    It helps users instantly rewrite emails, essays, and messages into specific tones
+    (Corporate, Empathetic, Legal, Gen-Z, etc.) and formats (Email, LinkedIn, Slack, etc.)
+    with an ultra-fast streaming experience.',
+    
     tags: ['React', 'groq-sdk', 'Tailwind CSS', 'Vercel Serverless Functions (Node.js)','Framer Motion','Lucide React (Icons)'],
     icon: Layers,
     color: 'from-violet-500 to-purple-500',
@@ -21,7 +23,7 @@ const projects = [
     icon: ShoppingBag,
     color: 'from-blue-500 to-cyan-500',
     link: '#',
-    github: '#'
+    github: 'https://github.com/Useradel07'
   },
   {
     title: 'Transport Tracker',
@@ -30,7 +32,7 @@ const projects = [
     icon: Map,
     color: 'from-emerald-500 to-green-500',
     link: '#',
-    github: '#'
+    github: 'https://github.com/Useradel07'
   }
 ];
 
