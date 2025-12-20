@@ -14,7 +14,7 @@ with an ultra-fast streaming experience.`,
     tags: ['React', 'groq-sdk', 'Tailwind CSS', 'Vercel Serverless Functions (Node.js)','Framer Motion','Lucide React (Icons)'],
     icon: Layers,
     color: 'from-violet-500 to-purple-500',
-    link: 'https://toneai-seven.vercel.app/',
+    link: 'https://tonemaster-ai.vercel.app/',
     github: 'https://github.com/Useradel07/tonemasterai'
   },
   {
