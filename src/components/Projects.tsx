@@ -4,13 +4,15 @@ import { ExternalLink, Github, Layers, ShoppingBag, Map } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Enterprise ERP System',
-    description: 'Comprehensive business management solution featuring real-time updates and role-based security.',
-    tags: ['Spring Boot', 'Angular', 'PostgreSQL', 'WebSocket'],
+    title: 'ToneMaster AI',
+    description: 'a professional text rewriting tool powered by **Groq** and the **Llama 3** model. It helps users instantly rewrite emails, essays, and messages into specific tones (Corporate, Empathetic, Legal, Gen-Z, etc.) and formats (Email, LinkedIn, Slack, etc.).
+ ultra-fast streaming experience.
+',
+    tags: ['React', 'groq-sdk', 'Tailwind CSS', 'Vercel Serverless Functions (Node.js)','Framer Motion','Lucide React (Icons)'],
     icon: Layers,
     color: 'from-violet-500 to-purple-500',
-    link: '#',
-    github: '#'
+    link: 'https://toneai-seven.vercel.app/',
+    github: 'https://github.com/Useradel07/tonemasterai'
   },
   {
     title: 'Modern E-Commerce',
