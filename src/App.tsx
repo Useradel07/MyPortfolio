@@ -21,25 +21,19 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className={`min-h-screen transition-colors duration-500 ${darkMode ? 'bg-slate-950 text-white' : 'bg-slate-50 text-slate-900'}`}>
+    <div className={`min-h-screen transition-colors duration-500 ${darkMode ? 'bg-slate-950 text-white' : 'bg-white text-slate-900'}`}>
       <Navigation darkMode={darkMode} setDarkMode={setDarkMode} />
       
       <main className="relative overflow-hidden">
-        {/* Global decorative gradients */}
-        <div className="fixed top-0 left-0 w-full h-screen pointer-events-none z-0">
-             <div className="absolute top-[10%] left-[20%] w-[30vw] h-[30vw] bg-violet-500/10 rounded-full blur-[100px]" />
-             <div className="absolute bottom-[20%] right-[10%] w-[25vw] h-[25vw] bg-blue-500/10 rounded-full blur-[100px]" />
-        </div>
-
         <div className="relative z-10">
           <Hero />
-          <div className="space-y-12 md:space-y-32">
-             <About />
-             <Skills />
-             <Projects />
-             <Experience />
-             <Achievements />
-             <Contact />
+          <div className="space-y-0">
+            <About />
+            <Skills />
+            <Projects />
+            <Experience />
+            <Achievements />
+            <Contact />
           </div>
         </div>
       </main>

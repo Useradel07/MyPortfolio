@@ -1,112 +1,80 @@
-import { ArrowDown, Download, MousePointer2 } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero() {
-  return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Dynamic Background Elements */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-violet-500/20 via-slate-950/0 to-slate-950/0 pointer-events-none" />
-      <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-[0.03] pointer-events-none" />
-      
-      {/* Animated Blobs */}
-      <motion.div 
-        animate={{ x: [0, 100, 0], y: [0, -50, 0], scale: [1, 1.2, 1] }}
-        transition={{ duration: 20, repeat: Infinity, repeatType: "reverse" }}
-        className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"
-      />
-      <motion.div 
-        animate={{ x: [0, -100, 0], y: [0, 50, 0], scale: [1, 1.1, 1] }}
-        transition={{ duration: 15, repeat: Infinity, repeatType: "reverse" }}
-        className="absolute bottom-1/4 -right-20 w-[600px] h-[600px] bg-violet-600/20 rounded-full blur-[120px] pointer-events-none"
-      />
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.1,
+      },
+    },
+  };
 
-      <div className="container mx-auto px-6 relative z-10 text-center">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="mb-8 inline-block relative group"
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
+  return (
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 pb-20 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
+      <motion.div 
+        className="container mx-auto px-6 relative z-10 text-center max-w-4xl"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        {/* Profile Image */}
+        <motion.div 
+          variants={itemVariants} 
+          className="mb-12 inline-block"
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: "spring", stiffness: 300 }}
         >
-          <div className="absolute -inset-1 bg-gradient-to-r from-violet-600 to-blue-600 rounded-full opacity-75 group-hover:opacity-100 blur transition duration-1000 group-hover:duration-200"></div>
-          <div className="relative w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-slate-950 bg-slate-950">
+          <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-800 shadow-lg dark:shadow-slate-950/50 hover:shadow-xl dark:hover:shadow-slate-950/70 transition-shadow duration-300">
             <img
-              src="https://media.licdn.com/dms/image/v2/D4D03AQHH3G7gtM4ZSg/profile-displayphoto-scale_200_200/B4DZqmHimqIgAY-/0/1763723589029?e=1766016000&v=beta&t=LYibhU1byHh3VJtkgEEvdSsvYkpH3D49HQ1Hgn23Dfc"
+              src="/img.png"
               alt="Adel Rjili"
-              className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+              className="w-full h-full object-cover"
             />
           </div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-        >
-          <h2 className="text-xl md:text-2xl font-medium text-violet-400 mb-4 tracking-wide">
-            Hello, I'm Adel Rjili
-          </h2>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight text-slate-900 dark:text-white">
-            <span className="block mb-2">Building Scalable</span>
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-500 via-blue-500 to-purple-500 text-glow">
-              <TypeAnimation
-                sequence={[
-                  'Web Applications',
-                  2000,
-                  'Backend Systems',
-                  2000,
-                  'User Experiences',
-                  2000,
-                ]}
-                wrapper="span"
-                speed={50}
-                repeat={Infinity}
-              />
-            </span>
-          </h1>
-        </motion.div>
+        {/* Title */}
+        <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-slate-900 dark:text-white leading-tight">
+          Adel Rjili
+        </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed"
-        >
-          Full-Stack Developer specializing in Spring Boot, Angular, React, and PostgreSQL. 
-          Crafting robust backends and seamless frontends from Tunisia 🇹🇳.
+        {/* Subtitle */}
+        <motion.h2 variants={itemVariants} className="text-xl md:text-2xl font-normal text-slate-600 dark:text-slate-400 mb-8">
+          Full-Stack Developer
+        </motion.h2>
+
+        {/* Description */}
+        <motion.p variants={itemVariants} className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+          Building scalable web applications and robust backend systems with Spring Boot, React, and PostgreSQL. 
+          Based in Tunisia 🇹🇳.
         </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-        >
+        {/* CTA Buttons */}
+        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button 
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-8 py-4 bg-white dark:bg-white text-slate-900 rounded-full font-bold transition-all hover:scale-105 hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] flex items-center gap-2"
+            className="px-8 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-lg font-semibold hover:bg-slate-800 dark:hover:bg-slate-100 transition-all duration-300 hover:shadow-lg hover:shadow-slate-900/20 dark:hover:shadow-white/10 hover:-translate-y-0.5"
           >
-            <MousePointer2 size={20} />
             View Projects
           </button>
           <button 
              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-             className="px-8 py-4 glass text-slate-900 dark:text-white rounded-full font-medium transition-all hover:bg-white/20 hover:scale-105 flex items-center gap-2"
+             className="px-8 py-3 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-white rounded-lg font-semibold hover:bg-slate-300 dark:hover:bg-slate-700 transition-all duration-300 hover:shadow-lg hover:shadow-slate-300/40 dark:hover:shadow-slate-700/40 hover:-translate-y-0.5 flex items-center gap-2 justify-center"
           >
-            <Download size={20} />
-            Download CV
+            <Mail size={18} />
+            Get In Touch
           </button>
         </motion.div>
-
-        <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 1 }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce hidden md:block"
-        >
-            <ArrowDown className="text-slate-400" />
-        </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 }
