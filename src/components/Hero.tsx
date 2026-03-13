@@ -54,7 +54,7 @@ export default function Hero() {
 
         {/* Description */}
         <motion.p variants={itemVariants} className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-          Building scalable web applications and robust backend systems with Spring Boot, React, and PostgreSQL. 
+          Building scalable web applications and robust backend systems with Spring Boot, Angular, React, and PostgreSQL. 
           Based in Tunisia 🇹🇳.
         </motion.p>
 
