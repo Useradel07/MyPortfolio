@@ -3,7 +3,7 @@ import { Briefcase, GraduationCap, Calendar } from 'lucide-react';
 const experiences = [
   {
     type: 'work',
-    title: 'Full-Stack Developer',
+    title: 'Web Developer',
     org: 'Freelance & Open Source',
     date: '2023 - Present',
     desc: 'Developing scalable web applications using Spring Boot Angular and React for various clients and open-source projects. Proficient in Spring Boot, Angular, and React. Focus on clean architecture and performance optimization.',
