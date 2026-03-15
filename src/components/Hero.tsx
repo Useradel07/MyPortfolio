@@ -49,7 +49,7 @@ export default function Hero() {
 
         {/* Subtitle */}
         <motion.h2 variants={itemVariants} className="text-xl md:text-2xl font-normal text-slate-600 dark:text-slate-400 mb-8">
-          Full-Stack Developer
+          Web Developer
         </motion.h2>
 
         {/* Description */}
