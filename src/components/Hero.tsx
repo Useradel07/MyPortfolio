@@ -49,12 +49,12 @@ export default function Hero() {
 
         {/* Subtitle */}
         <motion.h2 variants={itemVariants} className="text-xl md:text-2xl font-normal text-slate-600 dark:text-slate-400 mb-8">
-          Full-Stack Developer
+          Web Developer
         </motion.h2>
 
         {/* Description */}
         <motion.p variants={itemVariants} className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-          Building scalable web applications and robust backend systems with Spring Boot, React, and PostgreSQL. 
+          Building scalable web applications and robust backend systems with Spring Boot , React and Angular. 
           Based in Tunisia 🇹🇳.
         </motion.p>
 

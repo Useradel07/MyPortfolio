@@ -12,7 +12,7 @@ export default function Footer() {
           </div>
 
           <p className="text-slate-600 dark:text-slate-400 text-center mb-8 max-w-md">
-            Full-Stack Developer specializing in Spring Boot, React, and modern web technologies
+            Web Developer specializing in Spring Boot, React, and modern web technologies
           </p>
 
           <div className="flex gap-4 mb-8">

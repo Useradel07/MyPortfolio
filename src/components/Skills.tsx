@@ -1,14 +1,17 @@
-import { Database, Globe, Server, Terminal, Layout, Cpu, Layers, AtomIcon } from 'lucide-react';
+import { FaCubes, FaAws } from 'react-icons/fa';
+import { SiSpringboot, SiReact, SiAngular, SiPostgresql, SiTypescript, SiTailwindcss, SiVercel } from 'react-icons/si';
+
+
 
 const skills = [
-  { name: 'Spring Boot', icon: Server },
-  { name: 'React.js', icon: AtomIcon },
-  { name: 'Angular', icon: Globe },
-  { name: 'PostgreSQL', icon: Database },
-  { name: 'TypeScript', icon: Terminal },
-  { name: 'Tailwind CSS', icon: Layout },
-  { name: 'Microservices', icon: Cpu },
-  { name: 'AWS', icon: Layers },
+  { name: 'Spring Boot', icon: SiSpringboot },
+  { name: 'React.js', icon: SiReact },
+  { name: 'Angular', icon: SiAngular },
+  { name: 'PostgreSQL', icon: SiPostgresql },
+  { name: 'TypeScript', icon: SiTypescript },
+  { name: 'Tailwind CSS', icon: SiTailwindcss },
+  { name: 'Vercel', icon: SiVercel },
+  { name: 'AWS', icon: FaAws },
 ];
 
 export default function Skills() {
@@ -30,7 +33,7 @@ export default function Skills() {
               style={{ animationDelay: `${idx * 0.05}s` }}
             >
               <div className="mb-4 text-slate-900 dark:text-white transition-transform duration-300 group-hover:-translate-y-2">
-                <skill.icon size={32} strokeWidth={1.5} />
+                <skill.icon size={40} />
               </div>
               <h3 className="text-base font-semibold text-slate-900 dark:text-white">
                 {skill.name}

@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Map, MessageCircleMoreIcon, SparklesIcon, type LucideIcon } from 'lucide-react';
+import { ExternalLink, Github, Map, MessageCircleMoreIcon, ShoppingBagIcon, SparklesIcon, type LucideIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface Project {
@@ -20,20 +20,20 @@ const projects: Project[] = [
     github: 'https://github.com/Useradel07/tonemasterai'
   },
   {
+    title: 'Le charme Floral Bizerte',
+    description: 'Built a modern, high-end floral portfolio website that blends premium visual design with fast performance and responsive UX. Using React, TypeScript, Tailwind CSS, image optimization, and CI/CD workflows, the project delivers a polished, production-ready web experience.',
+    tags: ['React 18', 'Tailwind CSS', 'Github Actions','Gitleaks','Dependabot','WebP','Image Optimization'],
+    icon:ShoppingBagIcon,
+    link: 'https://manel-fleurs.vercel.app/',
+    github: 'https://github.com/Useradel07/le_charme_floral'
+  },
+    {
     title: 'Real-Time Chat Messaging Application',
     description: 'Built a secure and high-performance chat application using Spring Boot, Angular, and PostgreSQL, featuring real-time messaging via WebSockets and JWT-based authentication .',
     tags: ['Spring Boot 3.1.5','Angular 17',  'Java 21', 'STOMP over SockJS', 'Tailwind', 'JWT', 'PostgreSQL'],
     icon: MessageCircleMoreIcon,
     link: 'https://github.com/Useradel07/chat',
     github: 'https://github.com/Useradel07/chat'
-  },
-  {
-    title: 'Transport Tracker',
-    description: 'Real-time public transport tracking system with live location updates and route optimization.',
-    tags: ['Flutter', 'Supabase', 'Maps', 'WebSocket'],
-    icon: Map,
-    link: '#',
-    github: 'https://github.com/Useradel07'
   }
 ];
 

@@ -1,4 +1,6 @@
-import { Shield, Globe, Code, Cloud, Terminal, Layout, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { FaGitAlt, FaAws, FaTasks, FaReact, FaLanguage } from 'react-icons/fa';
+import { SiSpringboot, SiAngular, SiJira } from 'react-icons/si';
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -25,52 +27,76 @@ export default function Achievements() {
 
   const certifications = [
     {
-      icon: Shield,
-      title: 'Get Started with Jira',
-      organization: 'United Latino Students Association',
+      icon: SiSpringboot,
+      title: 'SPRING BOOT',
+      organization: 'Advancia Training',
+      date: 'Jan 2026',
+      skills: ['Spring Boot'],
+      link: 'https://www.linkedin.com/in/adel-rjili-342191227/overlay/Certifications/694070804/treasury/?profileId=ACoAADjNHaIBaV8jSQJk4dAJwYBR17dC2NbdZes',
+    },
+    {
+      icon: FaGitAlt,
+      title: 'GIT',
+      organization: 'Clevory Training',
+      date: 'Jan 2026',
+      skills: ['Git', 'GitHub'],
+      link: 'https://www.linkedin.com/in/adel-rjili-342191227/overlay/Certifications/693989556/treasury/?profileId=ACoAADjNHaIBaV8jSQJk4dAJwYBR17dC2NbdZes',
+    },
+    {
+      icon: SiAngular,
+      title: 'ANGULAR 21',
+      organization: 'Advancia Training',
+      date: 'Jan 2026',
+      skills: ['Angular'],
+      link: 'https://www.linkedin.com/in/adel-rjili-342191227/overlay/Certifications/693825382/treasury/?profileId=ACoAADjNHaIBaV8jSQJk4dAJwYBR17dC2NbdZes',
+    },
+    {
+      icon: FaAws,
+      title: 'AWS S3 Basics',
+      organization: 'Coursera',
+      date: 'Oct 2025',
+      skills: ['Cloud Storage', 'Amazon S3'],
+      link: 'https://www.coursera.org/account/accomplishments/verify/X6969ANBTT3U',
+    },
+    {
+      icon: FaTasks,
+      title: 'Scrum Fundamentals Certified (SFC)',
+      organization: 'Scrum.org',
+      date: '2025',
+      skills: ['Scrum'],
+      link: '#',
+    },
+    {
+      icon: SiJira,
+      title: 'Get started with Jira',
+      organization: 'Coursera',
       date: 'Nov 2025',
-      skills: ['Project Management', 'Jira'],
+      skills: ['Jira'],
       link: 'https://www.coursera.org/account/accomplishments/verify/Y1WAJLCTSS0V',
     },
     {
-      icon: Cloud,
+      icon: FaReact,
+      title: 'React.JS for Ecommerce',
+      organization: 'Udemy',
+      date: 'Aug 2025',
+      skills: ['React', 'Front-End Development'],
+      link: 'https://www.coursera.org/account/accomplishments/verify/Y1WAJLCTSS0V',
+    },
+    {
+      icon: FaAws,
       title: 'Create a Virtual Private Cloud (VPC) Using AWS',
       organization: 'Coursera',
       date: 'Sep 2025',
-      skills: ['AWS', 'Cloud Infrastructure'],
+      skills: ['Amazon VPC', 'AWS'],
       link: 'https://www.coursera.org/account/accomplishments/verify/VS4MCPMBXFZ8',
     },
     {
-      icon: Globe,
-      title: 'EF SET English Certificate',
+      icon: FaLanguage,
+      title: 'Certificat EF SET Anglais 65/100 (C1 Avancé)',
       organization: 'EF SET',
       date: 'Aug 2025',
-      skills: ['English', 'C1 Advanced'],
+      skills: ['English', 'Communication'],
       link: 'https://cert.efset.org/fr/tdodY3',
-    },
-    {
-      icon: Code,
-      title: 'React.JS for E-commerce',
-      organization: 'Udemy',
-      date: 'Aug 2025',
-      skills: ['React', 'Frontend Development'],
-      link: 'https://www.coursera.org/account/accomplishments/verify/Y1WAJLCTSS0V',
-    },
-    {
-      icon: Layout,
-      title: 'Build a Website Using Wix ADI',
-      organization: 'United Latino Students Association',
-      date: 'Sep 2022',
-      skills: ['Web Development', 'UI/UX'],
-      link: 'https://www.coursera.org/account/accomplishments/verify/XXDT49RV7QZV',
-    },
-    {
-      icon: Terminal,
-      title: 'Command Line in Linux',
-      organization: 'United Latino Students Association',
-      date: 'Sep 2022',
-      skills: ['Linux', 'System Administration'],
-      link: 'https://www.coursera.org/account/accomplishments/verify/2PXT4GH6SVBT',
     },
   ];
 
@@ -105,7 +131,7 @@ export default function Achievements() {
               >
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-slate-200 dark:bg-slate-800 rounded-lg w-fit text-slate-900 dark:text-white transition-all duration-300">
-                    <Icon size={24} strokeWidth={1.5} />
+                    <Icon size={32} />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-bold dark:text-white text-slate-900 mb-1">
@@ -156,7 +182,7 @@ export default function Achievements() {
           <div className="grid grid-cols-3 gap-6">
             <div className="text-center">
               <div className="text-3xl font-bold text-slate-900 dark:text-white mb-2">
-                7+
+                9+
               </div>
               <div className="dark:text-slate-400 text-slate-600 text-sm">
                 Certifications

@@ -90,7 +90,7 @@ export default function Contact() {
                     Location
                   </h3>
                   <p className="dark:text-slate-400 text-slate-600">
-                    Gabès, Tunisia
+                    Tunis , Tunisia
                   </p>
                 </div>
               </div>
