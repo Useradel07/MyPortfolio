@@ -1,5 +1,6 @@
 import { Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { SparklesCore } from '@/components/ui/sparkles';
 
 export default function Hero() {
   const containerVariants = {
@@ -20,6 +21,19 @@ export default function Hero() {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 pb-20 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900">
+      <div className="w-full absolute inset-0 h-screen pointer-events-none">
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-full opacity-30 dark:opacity-100"
+          particleColor="#3b82f6"
+          speed={1}
+        />
+      </div>
+
       <motion.div 
         className="container mx-auto px-6 relative z-10 text-center max-w-4xl"
         variants={containerVariants}
