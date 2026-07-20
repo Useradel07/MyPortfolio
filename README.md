@@ -1,58 +1,98 @@
-# My Portfolio
+# Adel Rjili - Portfolio
 
-Welcome to my professional portfolio! This repository showcases my projects, skills, and experience in software development.
+Welcome to my professional portfolio! This repository showcases my full-stack development projects and expertise in modern web technologies.
 
-## 🎯 About Me
+🌐 **Live Portfolio:** [adel-rjili.vercel.app](https://adel-rjili.vercel.app)
 
-I'm a passionate developer committed to creating high-quality, user-focused solutions. I specialize in building scalable applications and delivering clean, maintainable code.
+## 👨‍💻 About Me
 
-## 📚 Projects
+I'm a passionate full-stack developer specializing in building scalable, modern web applications. With expertise in TypeScript, React, and backend technologies, I create seamless user experiences with clean, maintainable code.
 
-### Featured Projects
+## 📚 Featured Projects
 
-- **Project 1** - Brief description of what this project does
-  - Technologies: JavaScript, React, Node.js
-  - [Repository Link](#) | [Live Demo](#)
+### 🌸 Le Charme Floral
+E-commerce platform for floral arrangements
+- **Tech Stack:** TypeScript, React, Tailwind CSS, Supabase
+- **Status:** Active Development (13 open issues)
+- **Live Site:** [manel-fleurs.vercel.app](https://manel-fleurs.vercel.app)
+- **Repository:** [le_charme_floral](https://github.com/Useradel07/le_charme_floral)
 
-- **Project 2** - Another impressive project description
-  - Technologies: Python, Django, PostgreSQL
-  - [Repository Link](#) | [Live Demo](#)
+### 💬 Chat Application
+Full-stack chat application with real-time messaging
+- **Tech Stack:** Spring Boot, Angular, Java
+- **Repository:** [chat_app_springboot_angular](https://github.com/Useradel07/chat_app_springboot_angular)
 
-- **Project 3** - One more cool project
-  - Technologies: TypeScript, Vue.js, Firebase
-  - [Repository Link](#) | [Live Demo](#)
+### 🎵 ToneMaster AI
+AI-powered music and audio platform
+- **Tech Stack:** TypeScript, React, Vite
+- **Live Site:** [tonemasterai.vercel.app](https://tonemasterai.vercel.app)
+- **Repository:** [tonemasterai](https://github.com/Useradel07/tonemasterai)
 
 ## 💻 Technical Skills
 
-**Languages:** JavaScript, Python, Java, TypeScript
+**Languages:** TypeScript, JavaScript, Java, Python
 
-**Frontend:** React, Vue.js, HTML5, CSS3, Tailwind CSS
+**Frontend:** 
+- React 18+
+- Tailwind CSS
+- Framer Motion (animations)
+- Vite (build tool)
 
-**Backend:** Node.js, Django, Express, Flask
+**Animations & Effects:**
+- Framer Motion
+- tsParticles
+- React Type Animation
 
-**Databases:** PostgreSQL, MongoDB, MySQL
+**Backend & Databases:** 
+- Spring Boot
+- Supabase
+- Node.js (implied from stack)
 
-**Tools & Platforms:** Git, Docker, AWS, GitHub, VS Code
+**UI/UX Libraries:**
+- Lucide React (icons)
+- React Icons
+- clsx (class utilities)
+
+**Tools & Platforms:**
+- Vite
+- TypeScript ESLint
+- Vercel (deployment)
+- GitHub
+
+## 🔧 Stack Highlights
+
+This portfolio demonstrates my proficiency with:
+- **Modern React Development** with TypeScript for type safety
+- **Advanced UI/UX** with animations and particle effects
+- **Responsive Design** using Tailwind CSS
+- **Full-stack Architecture** from frontend to backend integration
+- **Real-time Applications** with database synchronization
+
+## 📊 GitHub Statistics
+
+- **Repositories:** 5 active projects
+- **Primary Focus:** Full-stack web development
+- **Latest Activity:** July 2026
 
 ## 🔗 Connect With Me
 
-- 💼 [LinkedIn](#)
-- 🐙 [GitHub](https://github.com/Useradel07)
-- 📧 Email: your.email@example.com
-- 🌐 Personal Website: [yourwebsite.com](#)
+- 💼 **GitHub:** [Useradel07](https://github.com/Useradel07)
+- 🌐 **Portfolio:** [adel-rjili.vercel.app](https://adel-rjili.vercel.app)
+- 📧 **Inquiries:** Feel free to reach out through GitHub
 
-## 📈 Statistics
+## 🎯 What I'm Looking For
 
-- 🎓 Experience Level: [Your Level]
-- 📦 Projects Completed: [Number]
-- ⭐ Featured Work: [Highlight]
+- Collaboration on innovative web projects
+- Full-stack development opportunities
+- Open source contributions
+- Interesting challenges in modern web development
 
 ## 📝 License
 
-This portfolio is open source and available under the MIT License - see the LICENSE file for details.
+This portfolio is open source and available under the MIT License.
 
 ---
 
-**Last Updated:** July 2026
+**Last Updated:** July 2026 | Built with ❤️ using React + TypeScript + Tailwind CSS
 
-*Feel free to explore my repositories and reach out if you'd like to collaborate or discuss opportunities!*
+*Explore my repositories and let's build something amazing together!*
